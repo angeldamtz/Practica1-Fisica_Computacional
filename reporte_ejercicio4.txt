@@ -1,0 +1,190 @@
+============================================
+REPORTE DEL EJERCICIO 4
+ERROR DE LAS FUNCIONES ESPECIALES
+============================================
+
+Se comparan las funciones implementadas en fiscomp.funciones_especiales
+contra las funciones equivalentes del modulo math.
+
+===== RESULTADOS =====
+
+Funcion: seno
+x = 0.0
+Valor calculado: 0.000000000000000e+00
+Valor de math:   0.000000000000000e+00
+Error relativo:  0.000000e+00
+Error relativo (%): 0.000000e+00 %
+
+Funcion: seno
+x = 0.1
+Valor calculado: 9.983341664682817e-02
+Valor de math:   9.983341664682815e-02
+Error relativo:  1.390094e-16
+Error relativo (%): 1.390094e-14 %
+
+Funcion: seno
+x = 0.5
+Valor calculado: 4.794255386042030e-01
+Valor de math:   4.794255386042030e-01
+Error relativo:  0.000000e+00
+Error relativo (%): 0.000000e+00 %
+
+Funcion: seno
+x = 1.0
+Valor calculado: 8.414709848078965e-01
+Valor de math:   8.414709848078965e-01
+Error relativo:  0.000000e+00
+Error relativo (%): 0.000000e+00 %
+
+Funcion: seno
+x = 1.5
+Valor calculado: 9.974949866040544e-01
+Valor de math:   9.974949866040544e-01
+Error relativo:  0.000000e+00
+Error relativo (%): 0.000000e+00 %
+
+Funcion: seno
+x = 2.0
+Valor calculado: 9.092974268256817e-01
+Valor de math:   9.092974268256817e-01
+Error relativo:  0.000000e+00
+Error relativo (%): 0.000000e+00 %
+
+Funcion: coseno
+x = 0.0
+Valor calculado: 1.000000000000000e+00
+Valor de math:   1.000000000000000e+00
+Error relativo:  0.000000e+00
+Error relativo (%): 0.000000e+00 %
+
+Funcion: coseno
+x = 0.1
+Valor calculado: 9.950041652780258e-01
+Valor de math:   9.950041652780258e-01
+Error relativo:  0.000000e+00
+Error relativo (%): 0.000000e+00 %
+
+Funcion: coseno
+x = 0.5
+Valor calculado: 8.775825618903728e-01
+Valor de math:   8.775825618903728e-01
+Error relativo:  0.000000e+00
+Error relativo (%): 0.000000e+00 %
+
+Funcion: coseno
+x = 1.0
+Valor calculado: 5.403023058681398e-01
+Valor de math:   5.403023058681398e-01
+Error relativo:  0.000000e+00
+Error relativo (%): 0.000000e+00 %
+
+Funcion: coseno
+x = 1.5
+Valor calculado: 7.073720166770291e-02
+Valor de math:   7.073720166770291e-02
+Error relativo:  0.000000e+00
+Error relativo (%): 0.000000e+00 %
+
+Funcion: coseno
+x = 2.0
+Valor calculado: -4.161468365471425e-01
+Valor de math:   -4.161468365471424e-01
+Error relativo:  1.333932e-16
+Error relativo (%): 1.333932e-14 %
+
+Funcion: exponencial
+x = -2.0
+Valor calculado: 1.353352832366127e-01
+Valor de math:   1.353352832366127e-01
+Error relativo:  2.050875e-16
+Error relativo (%): 2.050875e-14 %
+
+Funcion: exponencial
+x = -1.0
+Valor calculado: 3.678794411714423e-01
+Valor de math:   3.678794411714423e-01
+Error relativo:  1.508950e-16
+Error relativo (%): 1.508950e-14 %
+
+Funcion: exponencial
+x = 0.0
+Valor calculado: 1.000000000000000e+00
+Valor de math:   1.000000000000000e+00
+Error relativo:  0.000000e+00
+Error relativo (%): 0.000000e+00 %
+
+Funcion: exponencial
+x = 0.5
+Valor calculado: 1.648721270700128e+00
+Valor de math:   1.648721270700128e+00
+Error relativo:  2.693537e-16
+Error relativo (%): 2.693537e-14 %
+
+Funcion: exponencial
+x = 1.0
+Valor calculado: 2.718281828459046e+00
+Valor de math:   2.718281828459045e+00
+Error relativo:  1.633713e-16
+Error relativo (%): 1.633713e-14 %
+
+Funcion: exponencial
+x = 2.0
+Valor calculado: 7.389056098930649e+00
+Valor de math:   7.389056098930650e+00
+Error relativo:  2.404038e-16
+Error relativo (%): 2.404038e-14 %
+
+Funcion: ln
+x = 0.1
+Valor calculado: -2.302585092994045e+00
+Valor de math:   -2.302585092994045e+00
+Error relativo:  3.857310e-16
+Error relativo (%): 3.857310e-14 %
+
+Funcion: ln
+x = 0.5
+Valor calculado: -6.931471805599450e-01
+Valor de math:   -6.931471805599453e-01
+Error relativo:  4.805140e-16
+Error relativo (%): 4.805140e-14 %
+
+Funcion: ln
+x = 0.9
+Valor calculado: -1.053605156578263e-01
+Valor de math:   -1.053605156578263e-01
+Error relativo:  1.317172e-16
+Error relativo (%): 1.317172e-14 %
+
+Funcion: ln
+x = 1.0
+Valor calculado: 0.000000000000000e+00
+Valor de math:   0.000000000000000e+00
+Error relativo:  0.000000e+00
+Error relativo (%): 0.000000e+00 %
+
+Funcion: ln
+x = 1.1
+Valor calculado: 9.531017980432493e-02
+Valor de math:   9.531017980432493e-02
+Error relativo:  0.000000e+00
+Error relativo (%): 0.000000e+00 %
+
+Funcion: ln
+x = 2.0
+Valor calculado: 6.931471805599450e-01
+Valor de math:   6.931471805599453e-01
+Error relativo:  4.805140e-16
+Error relativo (%): 4.805140e-14 %
+
+===== ANALISIS =====
+
+En general, las funciones implementadas presentan valores muy cercanos a los obtenidos con el modulo math.
+
+Puede aparecer un error relativo sorprendentemente alto cuando el valor real de la funcion esta muy cerca de cero.
+
+Esto ocurre porque el error relativo se calcula como:
+|aproximado - exacto| / |exacto|
+
+Cuando el valor exacto es muy pequeno, una diferencia absoluta pequena puede producir un error relativo grande debido a que se divide entre un numero cercano a cero.
+
+Por esta razon, un error relativo grande no significa necesariamente que la aproximacion sea mala; tambien es necesario considerar el error absoluto.

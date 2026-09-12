@@ -1,0 +1,43 @@
+===== REPORTE DEL EXPERIMENTO DE MILLIKAN =====
+
+Experimento: Experimento de Millikan
+Responsable: Angel Martinez
+
+===== CONDICIONES =====
+Voltaje aplicado: 500.0 V
+Distancia entre placas: 0.005 m
+Viscosidad del aceite: 1.8e-05 Pa·s
+
+===== CARGAS MEDIDAS =====
+Gota 1: 1.600000e-19 C
+Gota 2: 3.210000e-19 C
+Gota 3: 4.810000e-19 C
+Gota 4: 6.400000e-19 C
+
+===== RESULTADOS =====
+Carga estimada del electrón: 1.602083e-19 C
+Desviación estándar: 2.165064e-22 C
+Error relativo: 5.823370e-05
+Error relativo (%): 0.005823 %
+
+===== DETALLE DE LAS GOTAS =====
+Gota 1:
+  Carga medida: 1.600000e-19 C
+  Número de electrones (n): 1
+  Estimación individual de e: 1.600000e-19 C
+
+Gota 2:
+  Carga medida: 3.210000e-19 C
+  Número de electrones (n): 2
+  Estimación individual de e: 1.605000e-19 C
+
+Gota 3:
+  Carga medida: 4.810000e-19 C
+  Número de electrones (n): 3
+  Estimación individual de e: 1.603333e-19 C
+
+Gota 4:
+  Carga medida: 6.400000e-19 C
+  Número de electrones (n): 4
+  Estimación individual de e: 1.600000e-19 C
+
