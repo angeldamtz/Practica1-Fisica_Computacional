@@ -195,3 +195,165 @@ if __name__ == "__main__":
 
     print("\nTranspuesta de A:")
     print(A.transpose())
+
+    
+class LowerTriangularMatrix(Matrix):
+    """
+    Representa una matriz triangular inferior.
+
+    Parameters
+    ----------
+    data : list of list of numbers
+        Datos de la matriz.
+
+    Raises
+    ------
+    ValueError
+        Si la matriz no es cuadrada o tiene elementos no nulos
+        por encima de la diagonal principal.
+    """
+
+    def __init__(self, data):
+        
+        super().__init__(data)
+
+        if self.rows != self.cols:
+            raise ValueError("La matriz debe ser cuadrada.")
+
+        
+        for i in range(self.rows):
+            for j in range(i + 1, self.cols):
+                if self.data[i][j] != 0:
+                    raise ValueError(
+                        f"Elemento no nulo en la posición ({i}, {j}). "
+                        "La matriz no es triangular inferior."
+                    )
+
+                
+    def diagonal(self):
+        """
+        Regresa los elementos de la diagonal principal.
+
+        Returns
+        -------
+        list
+            Elementos de la diagonal.
+        """
+        return [self.data[i][i] for i in range(self.rows)]
+
+    def determinant(self):
+        """
+        Calcula el determinante como producto de la diagonal.
+
+        Returns
+        -------
+        number
+            Determinante de la matriz.
+        """
+        resultado = 1
+        for elemento in self.diagonal():
+            resultado *= elemento
+        return resultado
+
+    def is_singular(self):
+        """
+        Indica si la matriz es singular.
+
+        Returns
+        -------
+        bool
+            True si algún elemento diagonal es cero.
+        """
+        return any(elemento == 0 for elemento in self.diagonal())
+
+    def transpose(self):
+        """
+        Regresa la transpuesta como matriz triangular superior.
+
+        Returns
+        -------
+        UpperTriangularMatrix
+            Transpuesta de la matriz.
+        """
+        transpuesta = super().transpose()
+        return UpperTriangularMatrix(transpuesta.data)
+
+
+class UpperTriangularMatrix(Matrix):
+    """
+    Representa una matriz triangular superior.
+
+    Parameters
+    ----------
+    data : list of list of numbers
+        Datos de la matriz.
+
+    Raises
+    ------
+    ValueError
+        Si la matriz no es cuadrada o tiene elementos no nulos
+        por debajo de la diagonal principal.
+    """
+
+    def __init__(self, data):
+        """Inicializa y valida una matriz triangular superior."""
+        super().__init__(data)
+
+        if self.rows != self.cols:
+            raise ValueError("La matriz triangular superior debe ser cuadrada.")
+
+        for i in range(self.rows):
+            for j in range(i):
+                if self.data[i][j] != 0:
+                    raise ValueError(
+                        f"Elemento no nulo en la posición ({i}, {j}). "
+                        "Debe ser cero por debajo de la diagonal."
+                    )
+
+    def diagonal(self):
+        """
+        Regresa los elementos de la diagonal principal.
+
+        Returns
+        -------
+        list
+            Elementos de la diagonal.
+        """
+        return [self.data[i][i] for i in range(self.rows)]
+
+    def determinant(self):
+        """
+        Calcula el determinante como producto de la diagonal.
+
+        Returns
+        -------
+        number
+            Determinante de la matriz.
+        """
+        resultado = 1
+        for elemento in self.diagonal():
+            resultado *= elemento
+        return resultado
+
+    def is_singular(self):
+        """
+        Indica si la matriz es singular.
+
+        Returns
+        -------
+        bool
+            True si algún elemento diagonal es cero.
+        """
+        return any(elemento == 0 for elemento in self.diagonal())
+
+    def transpose(self):
+        """
+        Regresa la transpuesta como matriz triangular inferior.
+
+        Returns
+        -------
+        LowerTriangularMatrix
+            Transpuesta de la matriz.
+        """
+        transpuesta = super().transpose()
+        return LowerTriangularMatrix(transpuesta.data)
